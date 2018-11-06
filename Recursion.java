@@ -3,18 +3,41 @@ public class Recursion
    
     public static int count(int n)
     {
-        if (n==0);
-        return 0;
-        if(n==1);
-        return 4;
-        
-        return 4+count(n-1);
-        
-        
+        if (n==0)
+            return 0;
+        if (n==1)
+            return 4;
+        return 4 +count(n-1);
+  
+    
+      
+       
+   }
+   public static int counted(int n)
+    {
+        if(n==0)
+         return 0;
+        if (n==1)
+         return 20;
+        return 20+counted(n-1);
     }
-    
-    
-    
+   public static int fingers(int n)
+   {
+       if(n==0)
+            return 0;
+       if(n==1)
+            return 10;
+       return 10+fingers(n-1);
+    }
+    public static int odd(int n)
+    {
+        if (n<=0)
+            return 0;
+        if (n%2==1)
+       
+            return n+odd(n-2);
+        return 0;
+}
     public static void main(String[] args)
     {
          /*
